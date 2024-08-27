@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook - log in or sign up</title>
     <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/facebook-icon.png" />
     <!-- npx tailwindcss -i ./input.css -o ./style.css --watch -->
 </head>
-<body>
-    <div class="container">
-        <div class="left">
-            <img src="assets/facebook-logo.svg" alt="Facebook Logo">
-            <p>Facebook helps you connect and share with the peope in your life.</p>
+<body class="bg-gray-100">
+    <div class="container mt-36 flex justify-center items-center">
+        <div class="left mr-16 mb-32">
+            <img class="w-72" src="assets/facebook-logo.svg" alt="Facebook Logo">
+            <pre class="text-2xl mx-6 font-sans font-medium">Facebook helps you connect and share
+with the peope in your life.</pre>
         </div>
-        <div class="right">
-            <input type="text" placeholder="Email address or phone number">
-            <input type="password" placeholder="Password">
-            <button>Log In</button>
-            <span>
-                <a href="#">Forgot password?</a>
-            </span>
+        <div class="right flex flex-col bg-white p-3 rounded-xl w-1/3 shadow-xl">
+            <input class="px-4 py-3 my-2 border border-1 outline-blue-500 border-gray-300 rounded-md" type="text" placeholder="Email address or phone number">
+            <input class="px-4 py-3 my-1 border border-1 outline-blue-500 border-gray-300 rounded-md" type="password" placeholder="Password">
+            <button class="bg-blue-600 hover:bg-blue-700 text-white mt-4 py-3 rounded-md font-bold text-xl cursor-pointer">Log In</button>
+            <div class="flex justify-center my-5 text-blue-600 hover:underline cursor-pointer">
+                <a href="#" class="text-sm">Forgot password?</a>
+            </div>
+            <hr>
+            <div class="flex justify-center">
+                <button class="bg-lime-600 hover:bg-lime-700 text-white w-[55%] mt-7 mb-4 py-3 rounded-md font-semibold text-lg cursor-pointer">Create New Account</button>
+            </div>
         </div>
-        <hr>
-        <button>Create Account</button>
     </div>
 </body>
 </html>
